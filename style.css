@@ -33,6 +33,7 @@ h6 {
   font-family: "Bangers", cursive;
   z-index: 1;
   position: relative;
+  font-weight: 500;
 }
 
 .paramargins {
