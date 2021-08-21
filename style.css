@@ -157,6 +157,10 @@ h6 {
     animation-name: table-tennis-ball-animation-small;
   }
 
+  .eventTextSmallScreen {
+    margin: 20px 5px !important;
+  }
+
   .roleHolder {
     left: 0px;
   }
