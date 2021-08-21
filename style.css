@@ -1,0 +1,399 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+h6 {
+  font-size: 28pt; /*24pt;*/
+}
+
+h1 {
+  font-size: 64pt; /*57pt;*/
+}
+
+h1,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+}
+
+.titlefont {
+  /*font-family: 'Holtwood One SC', serif;*/
+  /*font-family: 'Luckiest Guy', cursive;*/
+  font-family: "Bangers", cursive;
+  z-index: 1;
+  position: relative;
+}
+
+.paramargins {
+  margin: 1em 0;
+}
+
+.fontcolor {
+  color: #2e3440;
+}
+
+.parafontsize {
+  font-size: 28pt;
+}
+
+.titlefontsize {
+  font-size: 34pt;
+}
+
+/*      Top of page     */
+
+#top-of-page {
+  /*background-color: #2e3440;*/
+  width: 100%;
+  height: 100vh;
+  padding: 0px 0;
+  font-family: Agency FB, Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  /*min-width: 400px;*/
+  /*Agency FB*/
+}
+
+#social-media-icon-container {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+#social-media-icon-container div {
+  display: inline;
+  font-size: 40px;
+}
+
+#facebook-icon {
+  display: inline;
+  padding-right: 20px;
+}
+
+#table-tennis-bat-left {
+  position: absolute;
+  left: 35%;
+  width: 30px;
+  z-index: 2;
+  top: -10px;
+  animation-name: table-tennis-bat-left-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: -0.1s;
+}
+
+#table-tennis-table {
+  position: absolute;
+  left: 50%;
+  /*margin-left: -12.5%;
+    width: 25%;*/
+  margin-left: -150px;
+  width: 300px;
+}
+
+#table-tennis-bat-right {
+  position: absolute;
+  right: 35%;
+  width: 30px;
+  top: -7px;
+
+  animation-name: table-tennis-bat-right-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 1.4s;
+}
+
+#table-tennis-ball {
+  animation-name: table-tennis-ball-animation;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+
+  position: absolute;
+  z-index: 3;
+
+  left: 36%;
+  top: 0px;
+}
+
+@media (max-width: 800px) {
+  #table-tennis-bat-right {
+    right: 6%;
+    animation-name: table-tennis-bat-right-animation-small;
+  }
+  #table-tennis-bat-left {
+    left: 8%;
+    animation-name: table-tennis-bat-left-animation-small;
+  }
+
+  #table-tennis-ball {
+    animation-name: table-tennis-ball-animation-small;
+  }
+
+  .roleTitle {
+    text-align: center !important;
+    width: auto !important;
+    padding-top: 40px;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  .rolePerson {
+    text-align: center !important;
+    display: block !important;
+    width: auto !important;
+    padding-top: 4px;
+  }
+
+  #social-media-icon-container {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    text-align: left;
+  }
+
+  #facebookText {
+    display: none !important;
+  }
+
+  #topTableImg {
+    transform: scale(2) !important;
+    width: 200% !important;
+    left: -100px;
+    top: 100px;
+    filter: blur(3px) !important;
+    /*height: 100vh;*/
+  }
+
+  #email {
+    font-size: 16pt;
+  }
+
+  #contactUsHolder {
+    margin: auto auto;
+    width: 87% !important;
+  }
+
+  #sessionLocation {
+    width: 87% !important;
+    font-size: large !important;
+  }
+
+  #aboutUsText {
+    width: 87% !important;
+    line-height: 25px;
+    /*font-size: large !important;*/
+  }
+
+  #aboutUsText p {
+    font-size: large !important;
+  }
+
+  #xlargeSmallScreen {
+    font-size: x-large !important;
+  }
+
+  .event p {
+    font-size: large !important;
+  }
+
+  .noneDisplaySmallScreen {
+    display: none;
+  }
+
+  #facebookContact {
+    font-size: 16pt;
+    display: block;
+    padding-top: 10px;
+  }
+
+  #contactUsText {
+    width: 100% !important;
+    font-size: large !important;
+  }
+
+  .flexCoverMorePrice {
+    flex: 70% !important;
+  }
+
+  .priceDiv {
+    width: 100% !important;
+  }
+
+  .priceDiv p {
+    font-size: x-large !important;
+  }
+
+  .sessionTime {
+    display: block;
+  }
+
+  h1 {
+    font-size: 48pt; /*57pt;*/
+  }
+
+  @keyframes table-tennis-bat-right-animation-small {
+    0% {
+      right: 6%;
+      top: -7px;
+    }
+    30% {
+      right: 9%;
+      top: 10px;
+    }
+    100% {
+      right: 6%;
+      top: -7px;
+    }
+  }
+
+  @keyframes table-tennis-bat-left-animation-small {
+    0% {
+      left: 8%;
+      top: -10px;
+    }
+    30% {
+      left: 9%;
+      top: 10px;
+    }
+    100% {
+      left: 8%;
+      top: -10px;
+    }
+  }
+
+  @keyframes table-tennis-ball-animation-small {
+    0% {
+      left: 11%;
+      top: 0px;
+    }
+    30% {
+      left: 62%;
+      top: 30px;
+    }
+    50% {
+      left: 88%;
+      top: 0px;
+    }
+    80% {
+      left: 38%; /*85, 32*/
+      top: 30px;
+    }
+    100% {
+      left: 11%;
+      top: 0px;
+    }
+  }
+
+  /*
+
+  
+  @keyframes table-tennis-ball-animation-small {
+    0% {
+      left: 11%;
+      top: 0px;
+    }
+    30% {
+      left: 56%;
+      top: 30px;
+    }
+    50% {
+      left: 88%;
+      top: 0px;
+    }
+    80% {
+      left: 44%;
+      top: 30px;
+    }
+    100% {
+      left: 11%;
+      top: 0px;
+    }
+  }
+
+  */
+  /*h6{
+        font-size: 57pt;
+    }
+
+    h1{
+        font-size: 100pt;
+    }*/
+}
+
+@keyframes table-tennis-bat-right-animation {
+  30% {
+    transform: translate(-14px, 17px);
+  }
+}
+
+@keyframes table-tennis-bat-left-animation {
+  30% {
+    transform: translate(14px, 17px);
+  }
+}
+
+@keyframes table-tennis-ball-animation {
+  0% {
+    transform: translate(0vw, 0px);
+  }
+  35% {
+    transform: translate(20vw, 30px);
+  }
+  50% {
+    transform: translate(27vw, 0px);
+  }
+  85% {
+    transform: translate(9vw, 30px);
+  }
+  100% {
+    transform: translate(0vw, 0px);
+  }
+}
+
+#about-us {
+  font-family: Agency FB, Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #eceff4;
+  padding: 30px 0;
+  text-align: center;
+}
+
+#about-us p {
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18pt;
+  padding: 30px 0;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+/* ------------------------- */
+/*      Upcomming Events     */
+/*#d8dee9 text-align: justify; */
+#UpcommingEvents {
+  font-family: Agency FB, Verdana, Geneva, Tahoma, sans-serif;
+
+  background-color: #e5e9f0;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.event {
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  color: #000000c8;
+  margin-top: 50px;
+}
