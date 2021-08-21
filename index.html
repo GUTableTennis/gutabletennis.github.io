@@ -40,22 +40,56 @@
         </div>
 
         <!-- Social media icons -->
-        <a href="https://www.facebook.com/glasgowUniTableTennis">
-            <div id="social-media-icon-container">
+
+        <div id="social-media-icon-container">
+            <a href="https://www.facebook.com/glasgowUniTableTennis" style="text-decoration: none;">
                 <div class="fa fa-facebook-square" id="facebook-icon" style="color:#3b5998;"></div>
-                <div style="color: #5e81ac;" class="titlefont" id="facebookText">glasgowUniTableTennis</div>
-            </div>
-        </a>
+            </a>
+            <a href="https://www.instagram.com/_gutabletennis" style="text-decoration: none;">
+                <div class="fa fa-instagram" style="color: transparent; background-clip: text; -webkit-background-clip: text; 
+                    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                     text-decoration: none; text-underline-position: above;">
+                </div>
+            </a>
+
+            <!--
+                    left: 50px;
+                top: 50px; 
+                background-image:linear-gradient(45deg, #f5f373, #751a81);
+                 text-stroke: 0.8px; -webkit-text-stroke: 0.8px #fad625ff;
+-->
+
+            <a href="https://www.gla.ac.uk/myglasgow/sport/gusa/" style="text-decoration: none;">
+                <div style="position: absolute;   content: '';
+left: 152px;
+top: 25px; 
+                width: 60px;
+                height: 100%;
+                transform: translate(-50%, -50%)  skew(-10deg) scaleX(1.3);
+                background: black;
+                z-index: 0;"></div>
+                <h2 style="padding-left: 15px; font-family: 'Bangers'; letter-spacing: 3px; font-weight:600; display: inline; font-size: 22pt; color:#fad625ff; z-index: 2;position: relative;
+                    ">
+                    GUSA</h2>
+                <!--<div class="fa fa-instagram"  #8d3b98
+                    style="color:#3b5998; text-decoration: none; text-underline-position: above;"></div>-->
+            </a>
+            <!--<div style="color: #5e81ac;" class="titlefont" id="facebookText">glasgowUniTableTennis</div>-->
+        </div>
+
+
+        <!--<div class="fab fa-instagram-square" style="color:#3b5998;"></div>-->
+
     </div>
 
     <!-- About Us -->
     <div id="about-us">
-        <h6 style="color: #8fbcbb" class="titlefont titlefontsize">About Us</h6>
+        <h6 class="titlefont titlefontsize sectionHeadingTextColor">About Us</h6>
         <div style="margin: 0 auto; width: 50%;" id="aboutUsText">
             <p style="color: #2e3440;"> We're the Glasgow University Table Tennis Club (GUTT). Right now we're just a
                 casual table tennis club, come along for a hit and a chat. We run a few socials throughout the year as
-                well. In the future we intend to compete in the league.</p>
-            <div class="titlefont" style="font-size: 20pt; color: #8fbcbb">Joining Fee</div>
+                well. In the future we intend to compete in the BUCS league and BUCS Competitions.</p>
+            <div class="titlefont sectionHeadingTextColor" style="font-size: 20pt;">Joining Fee</div>
             <div class="priceDiv"
                 style="width: 50%;margin: auto; text-align: center; color: #2e3440; display: flex; margin-bottom: 0; padding-bottom: 0;">
                 <p class="xlargeSmallScreen" id="xlargeSmallScreen"
@@ -78,7 +112,7 @@
 
     <!-- Upcomming Events -->
     <div id="UpcommingEvents">
-        <h6 style="color: #8fbcbb" class="titlefont titlefontsize">Upcomming Events</h6>
+        <h6 class="titlefont titlefontsize sectionHeadingTextColor">Upcomming Events</h6>
         <div class="event">
             <img src="./assets/OpenDayEvent.svg" width="120px">
             <p style="font-size: 14pt; margin-bottom: 0;">12/09/2021 - 13/09/2021</p>
@@ -89,7 +123,7 @@
 
     <!-- Times-->
     <div id="about-us">
-        <h6 style="color: #8fbcbb" class="titlefont titlefontsize">Times</h6>
+        <h6 class="titlefont titlefontsize sectionHeadingTextColor">Times</h6>
         <div style="margin: 0 auto; width: 60%;">
             <div style="font-family: 'Luckiest Guy';" class="fontcolor parafontsize paramargins"> Monday: <span
                     class="sessionTime"> 15:00 - 17:00 </span></div>
@@ -110,12 +144,14 @@
 
     <!-- Contact Us -->
     <div id="UpcommingEvents">
-        <h6 style="color: #8fbcbb" class="titlefont titlefontsize">Contact Us</h6>
+        <h6 class="titlefont titlefontsize sectionHeadingTextColor">Contact Us</h6>
         <div style="margin: 20px auto; width: 60%;" id="contactUsHolder">
             <div class="titlefont parafontsize fontcolor" style="font-family: 'Roboto'; font-size:18pt;"> <span
                     style="color: black; font-weight: bold;" id="email"> gu.tabletennisclub@gmail.com </span> <span
                     class="noneDisplaySmallScreen">|</span> <span style="color: #3b5998; font-weight: bold;"
-                    id="facebookContact">FB @gutabletennis</span> </div>
+                    id="facebookContact"> <a href="https://www.facebook.com/glasgowUniTableTennis"
+                        style="text-decoration: none; color: #3b5998;">FB @gutabletennis</a>
+                </span> </div>
             <p class="fontcolor"
                 style="padding-top: 20px; width: 70%; margin: auto; font-size: 18pt; font-family: 'Roboto';"
                 id="contactUsText"> Feel free to come along to one of our sessions as well, there will always be at
@@ -125,32 +161,39 @@
 
     <!-- Our Committee -->
     <div id="about-us">
-        <h6 style="color: #8fbcbb" class="titlefont titlefontsize">Our Committee</h6>
-        <div style="margin: 20px auto; width: 60%; color: black; display: block;">
+        <h6 class="titlefont titlefontsize sectionHeadingTextColor">Our Committee</h6>
+        <div class="roleHolder"
+            style="margin: 20px auto; width: 60%; color: black; display: block; position: relative;">
             <span style="font-weight: bold; color: #2e3440; font-family: Roboto;">
                 <h3 style="display: inline-block; width: 300px; text-align: left;" class="roleTitle"> PRESIDENT</h3>
-                <h3 style="width: 200px;display: inline-block;text-align: left;" class="rolePerson"> Vit Horacek</h3>
+                <h3 style="width: 300px;display: inline-block;text-align: left;" class="rolePerson"> Vit Horacek</h3>
                 <div></div>
                 <h3 style="display: inline-block; width: 300px; text-align: left;" class="roleTitle"> SECRETARY</h3>
-                <h3 style="width: 200px;display: inline-block;text-align: left;" class="rolePerson"> Richard Menzies
+                <h3 style="width: 300px;display: inline-block;text-align: left;" class="rolePerson"> Richard Menzies
                 </h3>
                 <div></div>
                 <h3 style="display: inline-block; width: 300px; text-align: left;" class="roleTitle"> TREASURER</h3>
-                <h3 style="width: 200px;display: inline-block;text-align: left;" class="rolePerson"> Fraser Dempster
+                <h3 style="width: 300px;display: inline-block;text-align: left;" class="rolePerson"> Fraser Dempster
                 </h3>
                 <div></div>
                 <h3 style="display: inline-block; width: 300px; text-align: left;" class="roleTitle"> WELFARE OFFICER
                 </h3>
-                <h3 style="width: 200px;display: inline-block;text-align: left;" class="rolePerson"> Jamie Marsden</h3>
+                <h3 style="width: 300px;display: inline-block;text-align: left;" class="rolePerson"> Jamie Marsden</h3>
                 <div></div>
-                <h3 style="display: inline-block; width: 300px; text-align: left;" class="roleTitle"> SOCIAL CONVENIOR
+                <h3 style="display: inline-block; width: 300px; text-align: left;" class="roleTitle"> TEAM EVENTS
+                    CONVENOR
                 </h3>
-                <h3 style="width: 200px;display: inline-block;text-align: left;" class="rolePerson"> Huzaifa Chishti
+                <h3 style="width: 300px;display: inline-block;text-align: left;" class="rolePerson"> Yaser Razouk &
+                    Alisa Khalid</h3>
+                <div></div>
+                <h3 style="display: inline-block; width: 300px; text-align: left;" class="roleTitle"> SOCIAL CONVENOR
+                </h3>
+                <h3 style="width: 300px;display: inline-block;text-align: left;" class="rolePerson"> Huzaifa Chishti
                 </h3>
                 <div></div>
                 <h3 style="display: inline-block; width: 300px; text-align: left;" class="roleTitle"> EQUIPMENT MANAGER
                 </h3>
-                <h3 style="width: 200px;display: inline-block;text-align: left;" class="rolePerson"> Philip Zubel</h3>
+                <h3 style="width: 300px;display: inline-block;text-align: left;" class="rolePerson"> Philip Zubel</h3>
             </span>
         </div>
     </div>

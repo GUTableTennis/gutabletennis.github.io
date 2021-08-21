@@ -22,6 +22,20 @@ h6 {
   padding: 0;
 }
 
+.sectionHeadingTextColor {
+  /*color: #8fbcbb;*/
+  /*color: #f6d32dff;*/
+  /*color: #f6ce0bff;*/
+
+  color: #fad625ff;
+  /*color: #fad20fff;*/
+  /*color: #f6dc62ff;*/
+}
+
+.roleHolder {
+  left: 75px;
+}
+
 .section {
   height: 100vh;
   width: 100%;
@@ -141,6 +155,10 @@ h6 {
 
   #table-tennis-ball {
     animation-name: table-tennis-ball-animation-small;
+  }
+
+  .roleHolder {
+    left: 0px;
   }
 
   .roleTitle {
@@ -369,7 +387,10 @@ h6 {
 
 #about-us {
   font-family: Agency FB, Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #eceff4;
+  /*background-color: #eceff4;*/
+
+  /*background-color: #f9faf8;*/
+  background-color: rgb(249, 249, 251);
   padding: 40px 0;
   text-align: center;
 }
@@ -388,9 +409,18 @@ h6 {
 #UpcommingEvents {
   font-family: Agency FB, Verdana, Geneva, Tahoma, sans-serif;
 
-  background-color: #e5e9f0;
+  /*background-color: #e5e9f0; */
+  /*background-color: #edeeec; */
+  /*background-color: #edeeeb; */
+  /*background-color: #eaebe8;*/
+  /*background-color: #edeeeb; */
+
+  /*background-color: #f4f5f4;*/
+
+  background-color: rgb(244, 244, 246);
   padding: 40px 0;
   text-align: center;
+  /*filter: invert(100%);*/
 }
 
 .event {
